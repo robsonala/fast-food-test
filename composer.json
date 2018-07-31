@@ -3,14 +3,18 @@
     "description": "fast food class",
     "minimum-stability": "stable",
     "require": {
-        "php": ">=7.0"
+        "php": ">=7.1"
     },
     "require-dev": {
-        "codeception/codeception": "^2.4"
+        "codeception/codeception": "*",
+        "phpunit/phpunit": "7.0"
     },
     "autoload": {
         "classmap": [
           "src"
         ]
+    },
+    "scripts": {
+        "test": "vendor/bin/codecept run"
     }
 }
